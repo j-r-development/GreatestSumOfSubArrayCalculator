@@ -48,36 +48,37 @@ namespace GreatestSumOfSubArrayCalculator
 					List<int> example4Subarray = CalculateSubarray(exampleList4);
 
 					//display data
+					Console.Clear();
 					Console.WriteLine("Here are the examples:");
 					Console.WriteLine();
 
 					Console.WriteLine("Example Array 1");
-					Console.WriteLine("Starting Array: [1, 2, 3] expected max subarray: 1, 2, 3 \t expected max subarray sum: 6");
+					Console.WriteLine("Starting Array: [1, 2, 3]");
 					Console.WriteLine("Expected Max Subarray: 1, 2, 3");
 					Console.WriteLine("Expected Max Subarray sum: 6");
 					Console.WriteLine();
-					reportFinalResults(exampleList1.ToArray(), example1Subarray.ToArray(), getSum(example1Subarray));
+					ReportFinalResults(exampleList1.ToArray(), example1Subarray.ToArray(), GetSum(example1Subarray));
 
 					Console.WriteLine("Example Array 2");
 					Console.WriteLine("Starting Array: [3, 5, -10, 1, 2, 3, 4]");
 					Console.WriteLine("Expected Max Subarray:  1, 2, 3, 4");
 					Console.WriteLine("Expected Max Subarray sum: 10");
 					Console.WriteLine();
-					reportFinalResults(exampleList2.ToArray(), example2Subarray.ToArray(), getSum(example2Subarray));
+					ReportFinalResults(exampleList2.ToArray(), example2Subarray.ToArray(), GetSum(example2Subarray));
 
 					Console.WriteLine("Example Array 3");
 					Console.WriteLine("Starting Array: [1, 2, 3, 4, -2, 3]");
 					Console.WriteLine("Expected Max Subarray: 1, 2, 3, 4, -2, 3");
 					Console.WriteLine("Expected Max Subarray sum: 11");
 					Console.WriteLine();
-					reportFinalResults(exampleList3.ToArray(), example3Subarray.ToArray(), getSum(example3Subarray));
+					ReportFinalResults(exampleList3.ToArray(), example3Subarray.ToArray(), GetSum(example3Subarray));
 
 					Console.WriteLine("Example Array 4");
 					Console.WriteLine("Starting Array: [-2, 1, -3, 4, -1, 2, 1, -5, 4]");
 					Console.WriteLine("Expected Max Subarray: 4, -1, 2, 1 ");
 					Console.WriteLine("Expected Max Subarray sum: 6");
 					Console.WriteLine();
-					reportFinalResults(exampleList4.ToArray(), example4Subarray.ToArray(), getSum(example4Subarray));
+					ReportFinalResults(exampleList4.ToArray(), example4Subarray.ToArray(), GetSum(example4Subarray));
 
 					Console.WriteLine("Type any input to restart this app, or type x or exit to exit.");
 					string exitCommand = Console.ReadLine();
@@ -177,7 +178,7 @@ namespace GreatestSumOfSubArrayCalculator
 					List<int> greatestSumSubarray = CalculateSubarray(userIntList);
 
 					//report findings
-					reportFinalResults(userIntList.ToArray(), greatestSumSubarray.ToArray(), getSum(greatestSumSubarray));
+					ReportFinalResults(userIntList.ToArray(), greatestSumSubarray.ToArray(), GetSum(greatestSumSubarray));
 
 					Console.WriteLine("Type any input to restart this app, or type x or exit to exit.");
 					string exitCommand = Console.ReadLine();
@@ -245,7 +246,7 @@ namespace GreatestSumOfSubArrayCalculator
 					}
 
 					//getSum will calculate sum of array
-					int testSum = getSum(testIntList);
+					int testSum = GetSum(testIntList);
 
 					if (testSum > maxSubArraySum)
 					{
@@ -285,7 +286,7 @@ namespace GreatestSumOfSubArrayCalculator
 		}
 
 
-		private static void reportCurrentResults(int[] resultArray, int results)
+		private static void ReportCurrentResults(int[] resultArray, int results)
 		{
 			//report current results
 			Console.WriteLine("The maximum sum so far is" + results);
@@ -293,7 +294,7 @@ namespace GreatestSumOfSubArrayCalculator
 			Console.WriteLine();
 		}
 
-		private static void reportFinalResults(int[] originalArray, int[] resultArray, int results)
+		private static void ReportFinalResults(int[] originalArray, int[] resultArray, int results)
 		{
 			//turn arrays into strings for cleaner display
 			string originalArrayString = "";
@@ -325,7 +326,7 @@ namespace GreatestSumOfSubArrayCalculator
 			Console.ReadLine();
 		}
 
-		private static int getSum(List<int> resultArray)
+		private static int GetSum(List<int> resultArray)
 		{
 			//simple addition of subarray elemnts
 			int sum = 0;

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jnrma\\source\\repos\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator.csproj",
+      "projectUniqueName": "C:\\Users\\jnrma\\Documents\\Git\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator.csproj",
       "projectName": "GreatestSumOfSubArrayCalculator",
-      "projectPath": "C:\\Users\\jnrma\\source\\repos\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator.csproj",
+      "projectPath": "C:\\Users\\jnrma\\Documents\\Git\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator.csproj",
       "packagesPath": "C:\\Users\\jnrma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jnrma\\source\\repos\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator\\obj\\",
+      "outputPath": "C:\\Users\\jnrma\\Documents\\Git\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator\\GreatestSumOfSubArrayCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
